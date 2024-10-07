@@ -1,9 +1,9 @@
 package com.ppalma.carusage.strategy;
 
-public class OffRoadCar implements CarUsage {
+public class WorkCarUsage implements CarUsage {
 
   @Override
   public String use() {
-    return "Using to go off road";
+    return "Using to go to work";
   }
 }

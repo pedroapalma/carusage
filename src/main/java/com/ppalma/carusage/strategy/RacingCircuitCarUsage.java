@@ -1,6 +1,6 @@
 package com.ppalma.carusage.strategy;
 
-public class RacingCircuitCar implements CarUsage {
+public class RacingCircuitCarUsage implements CarUsage {
 
   @Override
   public String use() {

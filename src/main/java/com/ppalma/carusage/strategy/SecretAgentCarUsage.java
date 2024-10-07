@@ -1,6 +1,6 @@
 package com.ppalma.carusage.strategy;
 
-public class SecretAgentCar implements CarUsage {
+public class SecretAgentCarUsage implements CarUsage {
 
   @Override
   public String use() {
