@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class CarUsageFactory {
 
-  public static CarUsage createCarUsage(DayOfWeek dayOfWeek) {
+  public CarUsage createCarUsage(DayOfWeek dayOfWeek) {
     return switch (dayOfWeek) {
       case MONDAY -> new WorkCarUsage();
       case TUESDAY -> new RacingCircuitCarUsage();
