@@ -4,7 +4,7 @@ import com.ppalma.carusage.strategy.CarUsage;
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
-public abstract class CarDecorator implements CarUsage {
+public abstract class CarFeature implements CarUsage {
 
   protected final CarUsage wrappedCarUsage;
 

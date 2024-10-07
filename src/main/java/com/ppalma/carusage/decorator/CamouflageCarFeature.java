@@ -2,7 +2,7 @@ package com.ppalma.carusage.decorator;
 
 import com.ppalma.carusage.strategy.CarUsage;
 
-public class CamouflageCarFeature extends CarDecorator {
+public class CamouflageCarFeature extends CarFeature {
 
   public CamouflageCarFeature(CarUsage wrappedCarUsage) {
     super(wrappedCarUsage);
