@@ -23,7 +23,7 @@ public class CarUsagesFactory {
         yield new FirearmsCarFeature(new CamouflageCarFeature(secretAgentCarUsage));
       }
       default -> throw new IllegalArgumentException(String.format(
-          "The day %s is invalid, the valid days are: [monday, tuesday, wednesday, thursday, friday]",
+          "The car for the day %s has not yet been implemented, enter the following days: [monday, tuesday, wednesday, thursday, friday]",
           dayOfWeek));
     };
   }

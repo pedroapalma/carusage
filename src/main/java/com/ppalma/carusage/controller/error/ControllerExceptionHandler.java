@@ -17,7 +17,7 @@ public class ControllerExceptionHandler {
   @ExceptionHandler(IllegalArgumentException.class)
   public ResponseEntity<ErrorResponse> handleIllegalArgumentException(IllegalArgumentException ex) {
     ErrorResponse errorMessage = new ErrorResponse(ex.getMessage(),
-        HttpStatus.BAD_REQUEST);
+        HttpStatus.SERVICE_UNAVAILABLE);
 
     return new ResponseEntity<>(errorMessage, errorMessage.getStatus());
   }
