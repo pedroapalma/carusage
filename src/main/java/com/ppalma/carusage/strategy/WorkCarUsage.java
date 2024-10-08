@@ -4,6 +4,6 @@ public class WorkCarUsage implements CarUsage {
 
   @Override
   public String use() {
-    return "Using to go to work";
+    return "Car using to go to work";
   }
 }

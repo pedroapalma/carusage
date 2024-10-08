@@ -11,7 +11,7 @@ import java.time.DayOfWeek;
 import org.springframework.stereotype.Component;
 
 @Component
-public class CarUsageFactory {
+public class CarUsagesFactory {
 
   public CarUsage createCarUsage(DayOfWeek dayOfWeek) {
     return switch (dayOfWeek) {
@@ -23,7 +23,7 @@ public class CarUsageFactory {
         yield new FirearmsCarFeature(new CamouflageCarFeature(secretAgentCarUsage));
       }
       default -> throw new IllegalArgumentException(String.format(
-          "The day %s is invalid, the valid days are: [MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY]",
+          "The day %s is invalid, the valid days are: [monday, tuesday, wednesday, thursday, friday]",
           dayOfWeek));
     };
   }

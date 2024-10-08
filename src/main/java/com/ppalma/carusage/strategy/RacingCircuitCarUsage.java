@@ -4,6 +4,6 @@ public class RacingCircuitCarUsage implements CarUsage {
 
   @Override
   public String use() {
-    return "Using to racing on the circuit";
+    return "Car using to racing on the circuit";
   }
 }

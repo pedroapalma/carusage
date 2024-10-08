@@ -1,6 +1,7 @@
 package com.ppalma.carusage.controller;
 
-import com.ppalma.carusage.service.CarUsageService;
+import com.ppalma.carusage.service.CarUsagesService;
+import jakarta.validation.Valid;
 import java.time.DayOfWeek;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,11 +14,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("car-usage")
 public class CarUsagesController {
 
-  private final CarUsageService carUsageService;
+  private final CarUsagesService carUsagesService;
 
   @GetMapping("/{dayOfWeek}")
-  public String carUsageByDayOfWeek(@PathVariable DayOfWeek dayOfWeek) {
-    return this.carUsageService.carUsageByDayOfWeek(dayOfWeek);
+  public String carUsageByDayOfWeek(@Valid @PathVariable DayOfWeek dayOfWeek) {
+    return this.carUsagesService.carUsageByDayOfWeek(dayOfWeek);
   }
 
 }

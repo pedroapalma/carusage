@@ -4,6 +4,6 @@ public class SecretAgentCarUsage implements CarUsage {
 
   @Override
   public String use() {
-    return "Using to be secret agent";
+    return "Car using to be secret agent";
   }
 }

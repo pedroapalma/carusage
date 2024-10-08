@@ -7,12 +7,12 @@ import org.springframework.stereotype.Service;
 
 @Service
 @RequiredArgsConstructor
-public class CarUsageService {
+public class CarUsagesService {
 
-  private final CarUsageFactory carUsageFactory;
+  private final CarUsagesFactory carUsagesFactory;
 
   public String carUsageByDayOfWeek(DayOfWeek dayOfWeek) {
-    CarUsage carUsage = this.carUsageFactory.createCarUsage(dayOfWeek);
+    CarUsage carUsage = this.carUsagesFactory.createCarUsage(dayOfWeek);
     return carUsage.use();
   }
 }

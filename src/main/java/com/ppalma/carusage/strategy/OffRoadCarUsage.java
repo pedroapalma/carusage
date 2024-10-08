@@ -4,6 +4,6 @@ public class OffRoadCarUsage implements CarUsage {
 
   @Override
   public String use() {
-    return "Using to go off road";
+    return "Car using to go off road";
   }
 }
