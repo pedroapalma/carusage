@@ -1,4 +1,4 @@
-# Movies Api
+# Car Usages Api
 ![Coverage](.github/badges/jacoco.svg)
 
 This project aims to develop a versatile car that can be used for various purposes throughout the week.
