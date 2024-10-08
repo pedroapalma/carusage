@@ -11,7 +11,7 @@ public class CarUsagesService {
 
   private final CarUsagesFactory carUsagesFactory;
 
-  public String carUsageByDayOfWeek(DayOfWeek dayOfWeek) {
+  public String getCarByDayOfWeek(DayOfWeek dayOfWeek) {
     CarUsage carUsage = this.carUsagesFactory.createCarUsage(dayOfWeek);
     return carUsage.use();
   }

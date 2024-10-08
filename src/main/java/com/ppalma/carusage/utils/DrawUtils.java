@@ -15,7 +15,7 @@ public interface DrawUtils {
         + "----------------------------------------------------------------------------";
   }
 
-  static String drawRacingCar() {
+  static String drawRacingCircuitCar() {
     return "                     ___..............._\n"
         + "             __.. ' _'.\"\"\"\"\"\"\\\\\"\"\"\"\"\"\"\"- .`-._\n"
         + " ______.-'         (_) |      \\\\           ` \\\\`-. _\n"

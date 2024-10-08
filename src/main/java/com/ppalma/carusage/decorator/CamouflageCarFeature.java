@@ -1,6 +1,7 @@
 package com.ppalma.carusage.decorator;
 
 import com.ppalma.carusage.strategy.CarUsage;
+import com.ppalma.carusage.utils.CarUsageUtils;
 
 public class CamouflageCarFeature extends CarFeature {
 
@@ -10,6 +11,6 @@ public class CamouflageCarFeature extends CarFeature {
 
   @Override
   public String use() {
-    return super.use() + "\nCamouflage is activated";
+    return super.use() + "\n" + CarUsageUtils.CAMOUFLAGE_CAR_FEATURE;
   }
 }

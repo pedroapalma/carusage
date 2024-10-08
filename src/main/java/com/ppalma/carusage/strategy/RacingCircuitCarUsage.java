@@ -1,11 +1,12 @@
 package com.ppalma.carusage.strategy;
 
+import com.ppalma.carusage.utils.CarUsageUtils;
 import com.ppalma.carusage.utils.DrawUtils;
 
 public class RacingCircuitCarUsage implements CarUsage {
 
   @Override
   public String use() {
-    return "Car using to racing on the circuit\n\n" + DrawUtils.drawRacingCar();
+    return CarUsageUtils.RACING_CIRCUIT_CAR_DETAIL + "\n\n" + DrawUtils.drawRacingCircuitCar();
   }
 }

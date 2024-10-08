@@ -17,8 +17,8 @@ public class CarUsagesController {
   private final CarUsagesService carUsagesService;
 
   @GetMapping("/{dayOfWeek}")
-  public String carUsageByDayOfWeek(@Valid @PathVariable DayOfWeek dayOfWeek) {
-    return this.carUsagesService.carUsageByDayOfWeek(dayOfWeek);
+  public String getCarByDayOfWeek(@Valid @PathVariable DayOfWeek dayOfWeek) {
+    return this.carUsagesService.getCarByDayOfWeek(dayOfWeek);
   }
 
 }

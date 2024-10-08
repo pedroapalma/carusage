@@ -1,6 +1,7 @@
 package com.ppalma.carusage.decorator;
 
 import com.ppalma.carusage.strategy.CarUsage;
+import com.ppalma.carusage.utils.CarUsageUtils;
 
 public class FirearmsCarFeature extends CarFeature {
 
@@ -10,6 +11,6 @@ public class FirearmsCarFeature extends CarFeature {
 
   @Override
   public String use() {
-    return super.use() + "\nThe use of firearms is permitted";
+    return super.use() + "\n" + CarUsageUtils.FIREARMS_CAR_FEATURE;
   }
 }
