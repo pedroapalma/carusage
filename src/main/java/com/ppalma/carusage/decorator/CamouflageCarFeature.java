@@ -10,6 +10,6 @@ public class CamouflageCarFeature extends CarFeature {
 
   @Override
   public String use() {
-    return super.use() + " and camouflage is activated";
+    return super.use() + "\nCamouflage is activated";
   }
 }

@@ -10,6 +10,6 @@ public class FirearmsCarFeature extends CarFeature {
 
   @Override
   public String use() {
-    return super.use() + " and the use of firearms is permitted";
+    return super.use() + "\nThe use of firearms is permitted";
   }
 }

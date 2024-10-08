@@ -95,6 +95,7 @@
 				<configuration>
 					<excludes>
 						<exclude>com/ppalma/carusage/MoviesApplication.class</exclude>
+						<exclude>com/ppalma/carusage/utils/DrawUtils.class</exclude>
 					</excludes>
 				</configuration>
 				<executions>
